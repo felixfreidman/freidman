@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    height: fit-content;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
