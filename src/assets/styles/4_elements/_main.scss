@@ -1,0 +1,224 @@
+.main-content {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: default;
+}
+
+.welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/images/content/background1Dark.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .welcome-header {
+        font-size: 90px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .welcome-subheader {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.main-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 80px);
+    height: calc(450px - 160px);
+    padding: 80px 40px;
+    font-size: 45px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    z-index: 2;
+    &::before {
+        height: 420px;
+        width: 6px;
+        background-color: #FFBB4D;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50px;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: -1;
+        transform: rotate(-45deg);
+    }
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(135deg, #FB5AFF, #89C1FF, #CD8EFF, );
+    .section-row {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        .link-more {
+            .section-name {
+                color: #fff !important;
+            }
+            .section-subheader {
+                color: #fff !important;
+            }
+            .section-header {
+                color: #fff !important;
+            }
+            .section-link {
+                color: #fff !important;
+                &:before {
+                    width: 100%;
+                    height: 2px;
+                    background-color: #fff !important;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -10px;
+                }
+            }
+        }
+        .section-block--link {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .section-name {
+                font-size: 40px;
+                font-weight: 500;
+                letter-spacing: 5px;
+                margin-top: 40px;
+                color: #2C2B2B;
+            }
+            .section-header {
+                font-size: 40px;
+                font-weight: 200;
+                margin-top: 20px;
+                color: #2C2B2B;
+            }
+            .section-subheader {
+                font-weight: 200;
+                font-size: 20px;
+                margin-top: 20px;
+                line-height: 30px;
+                width: 80%;
+                text-align: center;
+                color: #2C2B2B;
+            }
+            .section-link {
+                text-decoration: none;
+                color: #2C2B2B;
+                font-size: 25px;
+                font-weight: 500;
+                margin-top: 60px;
+                text-transform: uppercase;
+                transition: transform ease .3s;
+                position: relative;
+                &:hover,
+                &:visited,
+                &:active {
+                    transform: scale(1.1);
+                    color: #2C2B2B;
+                }
+                &:before {
+                    width: 100%;
+                    height: 2px;
+                    background-color: #2C2B2B;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -10px;
+                }
+            }
+        }
+        .link-cases {
+            background: linear-gradient(#ccc, #FFBB4D);
+        }
+        .link-more {
+            background: linear-gradient(#2cccc4, #db545a);
+        }
+        .section-block--image {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            bottom: 70px;
+            img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                transition: transform ease .3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            .section-block--ball {
+                width: 160px;
+                height: 160px;
+                position: absolute;
+                border-radius: 50%;
+                bottom: -40px;
+                transition: transform ease .3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            .ball--orange {
+                background: linear-gradient(135deg, #FFBB4D, #FF1616);
+                left: 45%;
+            }
+            .ball--purple {
+                background: linear-gradient(135deg, #CD8EFF, purple);
+                left: 25%;
+            }
+        }
+        .link-row {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(#478ac9, #2cccc4);
+            .contact-link {
+                text-decoration: none;
+                color: #fff;
+                font-size: 80px;
+                font-weight: 200;
+                margin-top: 60px;
+                text-transform: uppercase;
+                transition: transform ease .3s;
+                position: relative;
+                &:hover,
+                &:visited,
+                &:active {
+                    transform: scale(1.1);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

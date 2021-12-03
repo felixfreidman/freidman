@@ -6,10 +6,39 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="style.min.css")
         link(rel="shortcut icon", href="./assets/images/content/transDark.png", type="image/x-icon")
-        title Main Page
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css", rel="stylesheet")
+        
+        title Freidman Solutions: Main
     body
         .wrapper
             .wrapper-content  
                 include header.pug
-                main.main-content 
+                main.main-content
+                    .welcome-section
+                        .welcome-header(data-aos="fade-up") Freidman Solutions
+                        .welcome-subheader(data-aos="fade-up") Web & Mobile Solutions for People and Companies
+                    .main-banner 
+                        .banner-text(data-aos="fade-up") Мы воплощаем ваши идеи в жизнь, добавляем лоск и роскошь в ваши проекты и создаем произведения искусства
+                    .main-section 
+                            .section-row 
+                                .section-block--link.link-cases 
+                                    .section-name(data-aos="fade-up") Проекты
+                                    .section-header(data-aos="fade-up") Создавая Историю
+                                    .section-subheader(data-aos="fade-up") Мы верим, что правильные технологии помогают улучшать мир вокруг
+                                    a(href="./cases.html",data-aos="fade-up").section-link Читать больше
+                                .section-block--image 
+                                    img(src="./assets/images/content/imageMain.jpg", alt="",data-aos="flip-up") 
+                                    .section-block--ball.ball--orange(data-aos="zoom-up")
+                            .section-row 
+                                .section-block--image 
+                                    img(src="./assets/images/content/imageMain2.jpg", alt="",data-aos="flip-up") 
+                                    .section-block--ball.ball--purple(data-aos="zoom-up")
+                                .section-block--link.link-more
+                                    .section-name(data-aos="fade-up") О нас
+                                    .section-header(data-aos="fade-up") Наша Миссия
+                                    .section-subheader(data-aos="fade-up") Мы существуем, чтобы улучшать мир. Мы соединяем талант, креативность и технологии, чтобы помогать нашим клиентам достигать намечанных целей
+                                    a(href="./about.html",data-aos="fade-up").section-link Читать больше
+                            .section-row 
+                                .link-row 
+                                    a(href="./contact.html",data-aos="fade-up").contact-link Свяжитесь с нами
                 include footer.pug

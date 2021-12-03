@@ -1,30 +1,28 @@
+// $(window).on("load", function() {
+//     $(window)
+//         .scroll(function() {
+//             var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+//             $(".fade").each(function() {
+//                 /* Check the location of each desired element */
+//                 var objectBottom = $(this).offset().top + $(this).outerHeight();
 
-//   $('#btn-menu-mob').click(function(e) {
-//       e.preventDefault();
-//       $('.header__svg-mob').addClass('is-active');
-
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//     $('body').css('overflow', 'hidden');
-//     $('.page').animate({ 
-//         right: '190px' 
-//     }, 200); 
+//                 /* If the element is completely within bounds of the window, fade it in */
+//                 if (objectBottom <= windowBottom) {
+//                     //object comes into view (scrolling down)
+//                     if ($(this).css("opacity") == 0) {
+//                         $(this).fadeTo(500, 1);
+//                     }
+//                 } else {
+//                     //object goes out of view (scrolling up)
+//                     if ($(this).css("opacity") == 1) {
+//                         $(this).fadeTo(500, 0);
+//                     }
+//                 }
+//             });
+//         })
+//         .scroll(); //invoke scroll-handler on page-load
 // });
 
-// $('.menu-mobile__svg-close').click(function(e) {
-//     e.preventDefault();
-//     $('.header__svg-mob').removeClass('is-active');
-//     $('#menu-mobile').animate({ 
-//       right: '-207px' 
-//   }, 300);
-//   $('body').css('overflow', 'auto');
-//   $('.page').animate({ 
-//       right: '0px' 
-//   }, 200); 
-// });
-
- 
+AOS.init({
+    startEvent: "DOMContentLoaded",
+});
