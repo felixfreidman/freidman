@@ -7,7 +7,7 @@ html(lang="en")
         link(rel="stylesheet", href="style.min.css")
         link(rel="shortcut icon", href="./assets/images/content/transDark.png", type="image/x-icon")
         link(href="https://unpkg.com/aos@2.3.1/dist/aos.css", rel="stylesheet")
-        
+        style @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
         title Freidman Solutions: Main
     body
         .wrapper
@@ -38,7 +38,10 @@ html(lang="en")
                                     .section-header(data-aos="fade-up") Наша Миссия
                                     .section-subheader(data-aos="fade-up") Мы существуем, чтобы улучшать мир. Мы соединяем талант, креативность и технологии, чтобы помогать нашим клиентам достигать намечанных целей
                                     a(href="./about.html",data-aos="fade-up").section-link Читать больше
-                            .section-row 
-                                .link-row 
+                            .section-row
+                                .section-block--link.link-row
                                     a(href="./contact.html",data-aos="fade-up").contact-link Свяжитесь с нами
+                                .section-block--image 
+                                    img(src="./assets/images/content/imageMainDark3.jpg", alt="",data-aos="flip-up") 
+                                    .section-block--ball.ball--violet(data-aos="zoom-up")
                 include footer.pug

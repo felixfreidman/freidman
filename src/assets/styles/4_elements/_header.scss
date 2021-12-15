@@ -23,23 +23,24 @@
         align-items: center;
         width: 50%;
         justify-content: space-between;
-        .navigation-link {
-            font-size: 22px;
-            background: -webkit-linear-gradient(315deg, #89C1FF, #CD8EFF, #FB5AFF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: transform 0.3s ease;
-            outline: none;
-            text-decoration: none;
-            &:hover,
-            &:active {
-                transform: scale(1.1);
-            }
-            &:visited {
-                background: -webkit-linear-gradient(315deg, #89C1FF, #CD8EFF, #FB5AFF);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
+    }
+}
+
+.navigation-link {
+    font-size: 22px;
+    background: -webkit-linear-gradient(315deg, #89C1FF, #CD8EFF, #FB5AFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+    outline: none;
+    text-decoration: none;
+    &:hover,
+    &:active {
+        transform: scale(1.1);
+    }
+    &:visited {
+        background: -webkit-linear-gradient(315deg, #89C1FF, #CD8EFF, #FB5AFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

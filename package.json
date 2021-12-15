@@ -46,9 +46,12 @@
     "Firefox ESR"
   ],
   "dependencies": {
+    "-": "^0.0.1",
+    "@fancyapps/fancybox": "3.5.2",
+    "g": "^2.0.1",
     "jquery": "^3.4.1",
     "jquery-mask-plugin": "^1.14.16",
-    "swiper": "^4.5.0",
-    "@fancyapps/fancybox": "3.5.2"
+    "sass": "^1.45.0",
+    "swiper": "^4.5.0"
   }
 }
